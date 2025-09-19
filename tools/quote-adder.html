@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quote + Comma Adder</title>
-  <link rel="stylesheet" href="quote-adder.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1>📝 Quote + Comma Adder</h1>
-  <textarea id="input" placeholder="Paste values here (one per line)..."></textarea>
-  
-  <div class="options">
-    <label>Quote Style:
-      <select id="quote">
-        <option value="'">Single (')</option>
-        <option value="&quot;">Double (")</option>
-      </select>
-    </label>
-  </div>
+  <header>
+    <h1>📝 Quote + Comma Adder</h1>
+    <a href="index.html" class="back">⬅ Back to Home</a>
+  </header>
 
-  <button onclick="convert()">Convert</button>
+  <main class="tool">
+    <textarea id="quote-input" placeholder="Paste values here, one per line..."></textarea>
+    <select id="quote-style">
+      <option value="'">Single Quote (')</option>
+      <option value='"'>Double Quote (")</option>
+    </select>
+    <button onclick="addQuotes()">Convert</button>
+    <textarea id="quote-output" placeholder="Output will appear here..." readonly></textarea>
+    <button onclick="copyOutput('quote-output')">Copy to Clipboard</button>
+  </main>
 
-  <h2>Output:</h2>
-  <textarea id="output" readonly></textarea>
-  <button onclick="copyOutput()">Copy to Clipboard</button>
-
-  <script src="quote-adder.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -2,33 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SQL Formatter & Diff Checker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev QuickTools</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>SQL Formatter & Diff Checker</h1>
-    
-    <div class="card">
-      <h2>SQL Formatter</h2>
-      <textarea id="sql-input" placeholder="Paste your SQL here..."></textarea>
-      <button onclick="formatSQL()">Format SQL</button>
-      <textarea id="sql-output" placeholder="Formatted SQL will appear here..." readonly></textarea>
-    </div>
+  <header>
+    <h1>⚡ Dev QuickTools</h1>
+    <p>Handy tools for developers</p>
+  </header>
 
-    <div class="card">
-      <h2>Diff Checker</h2>
-      <div class="diff-boxes">
-        <textarea id="text1" placeholder="Paste first text..."></textarea>
-        <textarea id="text2" placeholder="Paste second text..."></textarea>
-      </div>
-      <button onclick="checkDiff()">Check Difference</button>
-      <pre id="diff-output"></pre>
-    </div>
-  </div>
+  <main class="cards">
+    <a href="quote.html" class="card card-quote">
+      <h2>📝 Quote + Comma Adder</h2>
+      <p>Convert raw values into SQL-friendly quoted lists.</p>
+    </a>
 
-  <script src="script.js"></script>
+    <a href="sql.html" class="card card-sql">
+      <h2>💡 SQL Formatter</h2>
+      <p>Beautify and uppercase keywords for clean queries.</p>
+    </a>
+
+    <a href="diff.html" class="card card-diff">
+      <h2>🔍 Diff Checker</h2>
+      <p>Compare two texts and highlight differences.</p>
+    </a>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for developers</p>
+  </footer>
 </body>
 </html>

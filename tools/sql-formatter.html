@@ -23,7 +23,10 @@
   <script>
     function formatSQL() {
       const input = document.getElementById("input").value;
-      const formatted = sqlFormatter.format(input, { language: "sql" });
+      const formatted = sqlFormatter.format(input, { 
+        language: "sql",
+        keywordCase: "upper" // ✅ This makes SQL keywords uppercase
+      });
       document.getElementById("output").innerText = formatted;
     }
   </script>

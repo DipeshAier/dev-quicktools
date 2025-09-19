@@ -3,26 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dev QuickTools</title>
-  <link rel="stylesheet" href="style.css">
+  <title>⚡ Dev QuickTools</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>⚡ Dev QuickTools</h1>
-    <p>Handy tools for developers</p>
-  </header>
+<body class="bg-gray-100 text-gray-800">
 
-  <main>
-    <div class="tool-card">
-      <h2>📝 Quote + Comma Adder</h2>
-      <p>Convert raw values into SQL-friendly quoted list.</p>
-      <a href="tools/quote-adder.html">Open Tool</a>
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">⚡ Dev QuickTools</h1>
+      <span class="text-sm">Handy tools for developers</span>
     </div>
-    <!-- Later add more tools here -->
-  </main>
+  </nav>
 
-  <footer>
-    <p>Made with ❤️ for developers</p>
+  <!-- Tools Grid -->
+  <div class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Tool 1: Quote + Comma Adder -->
+    <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+      <h2 class="text-lg font-semibold mb-2">📝 Quote + Comma Adder</h2>
+      <p class="text-sm text-gray-600 mb-4">Convert raw values into SQL-friendly quoted list.</p>
+      <a href="tools/quote-adder.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Open Tool</a>
+    </div>
+
+    <!-- Tool 2: SQL Formatter -->
+    <div class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition">
+      <h2 class="text-lg font-semibold mb-2">📐 SQL Formatter</h2>
+      <p class="text-sm text-gray-600 mb-4">Paste SQL and get a nicely formatted query.</p>
+      <a href="tools/sql-formatter.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Open Tool</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-gray-500 text-sm">
+    Made with ❤️ for developers
   </footer>
 </body>
 </html>
